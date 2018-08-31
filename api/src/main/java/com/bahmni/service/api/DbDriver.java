@@ -9,7 +9,7 @@ public class DbDriver {
         try {
             Class.forName("org.postgresql.Driver");
             //String url = "jdbc:postgresql://192.168.33.10:5432/openerp?user=openerp&password=openerp&ssl=true";
-            connection = DriverManager.getConnection("jdbc:postgresql://192.168.33.10:5432/openerp","openerp", "openerp");
+            connection = DriverManager.getConnection("jdbc:postgresql://192.168.1.127:5432/openerp","openerp", "openerp");
             //connection = DriverManager.getConnection(url);
         } catch (Exception e) {
             e.printStackTrace();
